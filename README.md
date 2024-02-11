@@ -24,11 +24,20 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This project implements a simple authentication system and provide 3 different endpoints in order to use and test it:
+
+- POST Register
+- POST Login
+- GET Logged_user
+
 
 ## Installation
 
 ```bash
+$ docker build -t pch-mongo .
+
+$ docker run -d -p 27017:27017 --name pch-mongo pch-mongo
+
 $ npm install
 ```
 
@@ -51,23 +60,9 @@ $ npm run start:prod
 # unit tests
 $ npm run test
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
+## Start pro
 ## License
 
 Nest is [MIT licensed](LICENSE).
